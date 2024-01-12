@@ -1,0 +1,250 @@
+*,body{
+    margin: 0;
+    padding: 0;
+    color: #0F2656;
+    font-family: sans-serif;
+}
+header{
+    display: flex;
+    max-width: 95%;
+    margin: auto;
+    border-bottom: 2px solid #F4F5F7;
+    padding: 8px;
+}
+.logo{
+    width:50%;
+}
+header .logo img{
+     max-width:80px;
+}
+.navber{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.navber ul{
+    display: flex;
+    font-family:sans-serif;
+}
+.navber ul li{
+    list-style: none;
+    margin:8px;
+}
+.navber ul li a{
+    text-decoration:none;
+    font-size: 13px;
+    color:#0F2656;
+}
+
+/* header end */
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container h1{
+    max-width: 450px;
+    font-family:sans-serif;
+    font-size: 40px;
+    text-align: center;
+    line-height: 53px;
+    color: #0F2656;
+    margin-top:50px ;
+}
+.container h1 b{
+    color: #008AFF;
+}
+.container p{
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    max-width: 575px;
+    text-align: center;
+    line-height: 20px;
+    margin-top: 15px;
+}
+.container img{
+    max-width:550px;
+}
+.section{
+    margin-top: 90px;
+    max-width: 650px;
+    display: grid;
+    grid-template-rows:1fr 1fr 1fr;
+    grid-template-columns: 50% 50% ;
+}
+.section .view{
+    color: #F15666;
+    text-align: end;
+    padding:2px 25px 0px 0px;
+    font-size: 39px;
+}
+.section h3{
+    font-size: 40px;
+    line-height: 40px;
+    grid-column: 2/3 ;
+    grid-row: -4/-1;
+}
+.section p{
+    max-width: 215px;
+    font-size:10px;
+    grid-row: 2/4;
+    text-align: end;
+    margin-left: 86px;
+}
+.card{
+    margin-top: 80px;
+    margin: 0% auto;
+    max-width: fit-content;
+    display: flex;
+    gap: 30px;
+    
+}
+.hero{
+    height: 380px;
+    width: 300px;
+    padding-left:20px ;
+    box-shadow: 3px 3px 5px rgb(190, 182, 182),
+                -3px -3px 5px rgb(229, 219, 219);
+}
+.hero img{
+    width: 100%;
+}
+.hero1{
+    background-color: #FDEBED;
+}
+
+.hero2{
+    background-color: #EBF9F4;
+}
+.hero3{
+    background-color: #FFF7E8;
+}
+.hero h4{
+    font-size: 20px;
+    margin-top: 10px;
+}
+.hero p{
+    font-size: 15px;
+    margin-top: 18px;
+    max-width: 250px;
+    line-height: 22px;
+}
+footer{
+    margin-top: 20PX;
+    height: 70px;
+    width: 100%;
+    background-color:#008AFF ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer p{
+    color:#ebf9f4ae ;
+}
+footer b{
+    color: white;
+    letter-spacing: 5px;
+}
+footer i{
+    padding-top: 1px;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.786) !important;
+}
+
+@media only screen and (max-width: 600px){
+    header{
+        width: 100%;
+    }
+    .logo{
+        width:40%;
+        padding-top:2px ;
+
+    }
+    .navber{
+        width:70%;
+        margin-left:30px;
+    }
+    .navber ul li a{
+        text-align: end;
+    }
+    header .logo img{
+        width:60px;
+        
+    }
+    .navber ul li{
+        margin:4px;
+    }
+    .navber ul li a{
+        font-size: 8px;
+    }
+  
+    .container{
+        width:100%;
+        text-align: center;
+    }
+    .container img{
+        width:250px;
+    }
+    .section{
+        margin-top: 40px;
+        width:280px;
+    }
+    .section p{
+        width: 50%;
+    }
+    .section .view{
+        padding:2px 25px 0px 0px;
+        font-size: 20px;
+    }
+    .section h3{
+        font-size: 22px;
+        line-height: 20px;
+    }
+    .section p{
+        width: 130px;
+        font-size:8px;
+        margin: 0px;
+    }
+    .hero{
+        height: 300px;
+        width: 280px;
+        padding-left:10px ;
+    }
+    .card{
+        flex-direction: column;
+        margin: 0 auto;
+        
+    }
+    .hero img{
+        width: 100%;
+    }
+    .hero h4{
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    .hero p{
+        font-size: 10px;
+        margin-top: 4px;
+        max-width: 250px;
+        line-height: 15px;
+    }
+    footer{
+        height: 40px;
+        width: 100%;
+    }
+    footer p{
+        width: 280PX;
+        font-size: 8px;
+    }
+    footer b{
+        letter-spacing: 3px;
+    }
+    footer i{
+        padding-top: 1px;
+        font-size: 8px;
+    }
+
+}
